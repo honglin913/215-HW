@@ -17,14 +17,12 @@ CREATE TABLE Employee (
 -- Create the Revenue table
 CREATE TABLE Revenue (
     TRID INT PRIMARY KEY, -- Transaction ID as primary key
-    Amount DECIMAL(10, 2) NOT NULL, -- Amount of revenue
     FOREIGN KEY (TRID) REFERENCES Transaction(TRID) -- Foreign key referencing Transaction
 );
 
 -- Create the Expenditure table
 CREATE TABLE Expenditure (
     TRID INT PRIMARY KEY, -- Transaction ID as primary key
-    Amount DECIMAL(10, 2) NOT NULL, -- Amount of expenditure
     FOREIGN KEY (TRID) REFERENCES Transaction(TRID) -- Foreign key referencing Transaction
 );
 
